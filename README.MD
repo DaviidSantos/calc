@@ -22,7 +22,7 @@ Usuários devem ser capazes de:
 
 ## Links
 
-- Live Site URL: [Site]()
+- Live Site URL: [Site](https://daviidsantos.github.io/calc/)
 
 ## Feito Com
 
