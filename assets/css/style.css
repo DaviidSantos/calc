@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Spartan';
+    background: #160628;
+    color: #FFE53D;
+}
+
+.calculator {
+    width: 301px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background: #1D0934;
+    border-radius: 8px;
+    height: 340px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: inherit;
+    font-weight: bold;
+    padding-top: 3px;
+    text-transform: uppercase;
+    background: #341C4F;
+    color: #FFE53D;
+    box-shadow: rgb(135, 28, 156) 0px 3px 0px 0px;
+}
+
+.delete,
+.equals,
+.reset,
+.multiplication {
+    font-size: 14px;
+}
+
+.delete,
+.reset {
+    color: #FFF;
+    background: #58077D;
+}
+
+.equals,
+.reset {
+    grid-column: span 2;
+}
+
+.equals {
+    background: #00E0D1;
+    color: #1B2428;
+    box-shadow: rgb(108 249 242) 0px 3px 0px 0px;
+}
+
+.result {
+    height: 75px;
+    background: #1D0934;
+    border-radius: 8px;
+    margin: 30px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    font-size: 26px;
+}
+
+.button-clicked {
+    box-shadow: none;
+    transform: translateY(2px);
+}
